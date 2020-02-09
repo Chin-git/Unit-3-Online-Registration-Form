@@ -11,114 +11,118 @@
 </head>
 
 <body>
-   <h1 id="main-header">The Code Review</h1>
-   <form action="index.html" method="post">
-            <h2>Signup for our newsletter</h2>
-            <span class="align">Get the latest news on how your code is doing right in your inbox</span>
-            
-            <span class="top-border"></span>
-            <span class="bottom-border"></span>
-            
-            <fieldset id="contact-info">
-                <legend><h3>Contact Information</h3></legend>
+    <h1 id="main-header">The Code Review</h1>
+    <form action="index.html" method="post">
+        <h2>Signup for our newsletter</h2>
+        <span class="align">Get the latest news on how your code is doing right in your inbox</span>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required">
+        <span class="top-border"></span>
+        <span class="bottom-border"></span>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="user_email" placeholder="Required">
+        <fieldset id="contact-info">
+            <legend>
+                <h3>Contact Information</h3>
+            </legend>
 
-                <label for="number">Phone Number</label>
-                <input type="text" id="number" name="user_number">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required">
 
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" placeholder="Required">
 
-                <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" name="user_number">
 
-                <label for="state">State</label>
-                <select id="state" name="user_state">
-                    <option value="" disabled selected>Choose State</option>
-                    <option value="AL">AL</option>
-                    <option value="AK">AK</option>
-                    <option value="AR">AR</option>	
-                    <option value="AZ">AZ</option>
-                    <option value="CA">CA</option>
-                    <option value="CO">CO</option>
-                    <option value="CT">CT</option>
-                    <option value="DC">DC</option>
-                    <option value="DE">DE</option>
-                    <option value="FL">FL</option>
-                    <option value="GA">GA</option>
-                    <option value="HI">HI</option>
-                    <option value="IA">IA</option>	
-                    <option value="ID">ID</option>
-                    <option value="IL">IL</option>
-                    <option value="IN">IN</option>
-                    <option value="KS">KS</option>
-                    <option value="KY">KY</option>
-                    <option value="LA">LA</option>
-                    <option value="MA">MA</option>
-                    <option value="MD">MD</option>
-                    <option value="ME">ME</option>
-                    <option value="MI">MI</option>
-                    <option value="MN">MN</option>
-                    <option value="MO">MO</option>	
-                    <option value="MS">MS</option>
-                    <option value="MT">MT</option>
-                    <option value="NC">NC</option>	
-                    <option value="NE">NE</option>
-                    <option value="NH">NH</option>
-                    <option value="NJ">NJ</option>
-                    <option value="NM">NM</option>			
-                    <option value="NV">NV</option>
-                    <option value="NY">NY</option>
-                    <option value="ND">ND</option>
-                    <option value="OH">OH</option>
-                    <option value="OK">OK</option>
-                    <option value="OR">OR</option>
-                    <option value="PA">PA</option>
-                    <option value="RI">RI</option>
-                    <option value="SC">SC</option>
-                    <option value="SD">SD</option>
-                    <option value="TN">TN</option>
-                    <option value="TX">TX</option>
-                    <option value="UT">UT</option>
-                    <option value="VT">VT</option>
-                    <option value="VA">VA</option>
-                    <option value="WA">WA</option>
-                    <option value="WI">WI</option>	
-                    <option value="WV">WV</option>
-                    <option value="WY">WY</option>
-                </select>
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address">
 
-                <label for="zipcode">Zip Code</label>
-                <input type="text" id="zipcode" name="user_zipcode">
-            </fieldset>
-            
-            <span class="middle-border"></span>
-            
-            <fieldset id="newsletter">
-                <legend><h3>Newsletter</h3></legend>
-                <span id="receive">Select the newsletters you would like to recieve</span>
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
 
-                <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html" class="label"> HTML News</label><br>
-                <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css" class="label"> CSS News</label><br>
-                <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript" class="label"> Javascript News</label>
+            <label for="state">State</label>
+            <select id="state" name="user_state">
+                <option value="" disabled selected>Choose State</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+            </select>
 
-                <span id="news-format">Newsletter format</span>
-                <input type="radio" id="html_format" value="html-format" name="user_format"><label class="label" for="html_format"> HTML</label><br>
-                <input type="radio" id="plaintext" value="plain-text" name="user_format"><label for="plaintext" class="label"> Plain text</label>
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" name="user_zipcode">
+        </fieldset>
 
-                <label for="topic" id="topics">Other topics you'd like to hear about</label>
-                <textarea id="topic" name="user_topic" cols="7"></textarea>
-                
-                <button type="submit" id="btn">Sign Up</button>
+        <span class="middle-border"></span>
+
+        <fieldset id="newsletter">
+            <legend>
+                <h3>Newsletter</h3>
+            </legend>
+            <span id="receive">Select the newsletters you would like to recieve</span>
+
+            <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html" class="label"> HTML News</label><br>
+            <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css" class="label"> CSS News</label><br>
+            <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript" class="label"> Javascript News</label>
+
+            <span id="news-format">Newsletter format</span>
+            <input type="radio" id="html_format" value="html-format" name="user_format"><label class="label" for="html_format"> HTML</label><br>
+            <input type="radio" id="plaintext" value="plain-text" name="user_format"><label for="plaintext" class="label"> Plain text</label>
+
+            <label for="topic" id="topics">Other topics you'd like to hear about</label>
+            <textarea id="topic" name="user_topic" cols="7"></textarea>
+
+            <button type="submit" id="btn">Sign Up</button>
             <span id="copyright" class="align">&copy; The Code Review</span>
-            </fieldset>
-        
-            
+        </fieldset>
+
+
     </form>
 </body>
 

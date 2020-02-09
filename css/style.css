@@ -93,17 +93,11 @@ input[type="radio"]:checked + label {
 }
 
 
-
-input[placeholder="Required"] {
-
-}
-
-
 label {
     display: block;
 }
 
-label, 
+label,
 #receive,
 #news-format {
     color: #505552;
@@ -175,11 +169,7 @@ label,
    =====================
                         */
 
-@media (min-width: 768px) {
-    
-    
-    
-}
+@media (min-width: 768px) {}
 
 
 
@@ -201,7 +191,7 @@ label,
 
 .top-border {
     margin-top: 40px;
-    border: solid 2px #2d3945; 
+    border: solid 2px #2d3945;
 }
 
 .middle-border {
