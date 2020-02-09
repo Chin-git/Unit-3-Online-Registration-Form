@@ -1,18 +1,181 @@
 /* =====================
         Base Styles
    =====================
-                        */
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: #fff;
+    font-family: 'Nunito', sans-serif;
+    max-width: 1200px;
+}
+
+form {
+    margin: 40px 40px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #2d3945;
+}
+
+span {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    border-radius: 5px;
+    background: #eff0f1;
+    padding: 10px 0;
+    width: 100%;
+    margin: 15px 0;
+    border: none;
+    height: 50px
+}
+
+textarea {
+    border-radius: 5px;
+    background: #eff0f1;
+    width: 100%;
+    margin: 15px 0;
+    border: none;
+    height: 150px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border: solid 2px #839bb1;
+}
+
+select:required:disabled {
+    color: #666;
+}
+
+::placeholder {
+    color: #c8cbce;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    text-align: right;
+    padding-right: 10px;
+}
+
+select {
+    color: #c8cbce;
+}
+
+option:not(:first-of-type) {
+    color: black;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
 
 
+
+input[placeholder="Required"] {
+
+}
+
+
+label {
+    display: block;
+}
+
+label, 
+#receive,
+#news-format {
+    color: #505552;
+}
+
+
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+#select {
+    color: red;
+}
+
+#contact-info {
+    margin-top: 20px;
+}
+
+#topics {
+    margin-top: 15px;
+}
+
+#receive {
+    margin: 0 0 15px 0;
+}
+
+#news-format {
+    margin: 15px 0;
+}
+
+#newsletter input {
+    margin: 0 5px;
+}
+
+#btn {
+    text-align: center;
+    width: 100%;
+    background: #4ebbb5;
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 1.25em;
+}
+
+#zipcode {
+    width: 50%;
+}
+
+#main-header {
+    width: 100%;
+    color: white;
+    background: #2D3945;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
 
 
 
 /* =====================
-       Media Quieres
+       Media Query
    =====================
                         */
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     
     
     
@@ -28,4 +191,25 @@
 
 #copyright {
     font-style: italic;
+    font-weight: bold;
+}
+
+.align {
+    text-align: center;
+    color: #bfc3c6;
+}
+
+.top-border {
+    margin-top: 40px;
+    border: solid 2px #2d3945; 
+}
+
+.middle-border {
+    border: solid 2px #2d3945;
+    margin: 20px 0;
+}
+
+.bottom-border {
+    border: solid 1px #2d3945;
+    margin-top: 3px;
 }
