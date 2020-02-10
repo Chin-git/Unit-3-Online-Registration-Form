@@ -191,6 +191,10 @@ label,
     #contact-info > li > label + * {
         flex: 1 0 200px;
     }
+    
+    .zip {
+        display: initial;
+    }
 }
 
 
