@@ -173,7 +173,7 @@ label,
 
 #btn:active {
     background: tomato;
-    transform: scale(0.5);
+    transform: scale(0.99);
 }
 
 #zipcode {
