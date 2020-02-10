@@ -69,10 +69,6 @@ textarea:focus {
     border: solid 2px #839bb1;
 }
 
-select:required:disabled {
-    color: #666;
-}
-
 ::placeholder {
     color: #c8cbce;
 }
@@ -83,7 +79,7 @@ input[type="email"]::placeholder {
     padding-right: 10px;
 }
 
-select {
+select:required:invalid {
     color: #c8cbce;
 }
 
@@ -158,7 +154,7 @@ label,
 }
 
 #zipcode {
-    width: 50%;
+    width: 30%;
 }
 
 #main-header {
@@ -195,11 +191,6 @@ label,
     #contact-info > li > label + * {
         flex: 1 0 200px;
     }
-    
-   #contact-info > li > label + #zipcode {
-       
-    }
-    
 }
 
 

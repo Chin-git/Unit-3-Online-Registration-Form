@@ -47,7 +47,7 @@
 
                 <li>
                     <label for="state">State</label>
-                    <select id="state" name="user_state">
+                    <select id="state" name="user_state" required>
                         <option value="" disabled selected>Choose State</option>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
@@ -103,9 +103,9 @@
                     </select>
                 </li>
 
-                <li>
+                <li class="zip">
                     <label for="zipcode">Zip Code</label>
-                    <input type="text" id="zipcode" name="user_zipcode">
+                    <span><input type="text" id="zipcode" name="user_zipcode"></span>
                 </li>
             </ul>
         </fieldset>
@@ -135,4 +135,5 @@
 
 
     </form>
-</body></html>
+</body>
+</html>
