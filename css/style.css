@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     background: #fff;
     font-family: 'Nunito', sans-serif;
-    max-width: 1200px;
+    max-width: 1920px;
 }
 
 li {
@@ -31,9 +31,11 @@ fieldset {
     padding: 0;
 }
 
-h3 {
+legend {
     color: #2d3945;
-    
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 1.1em;
 }
 
 h2 {
@@ -47,39 +49,46 @@ span {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 select {
     border-radius: 5px;
     background: #eff0f1;
-    padding: 10px 0;
+    padding: 10px 5px;
     width: 100%;
     margin: 15px 0;
     border: none;
     height: 50px;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.3) inset,
+                -1px -1px 0 rgba(0,0,0,0.3) inset;
 }
 
 textarea {
     border-radius: 5px;
     background: #eff0f1;
     width: 100%;
+    padding: 5px;
     margin: 15px 0;
     border: none;
     height: 150px;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.3) inset,
+                -1px -1px 0 rgba(0,0,0,0.3) inset;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     border: 2px solid #839bb1;
     outline: none;
+    background: #fff;
 }
 
 ::placeholder {
     color: #c8cbce;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input::placeholder {
     text-align: right;
     padding-right: 10px;
 }
@@ -202,7 +211,7 @@ label,
     
     .contact-info > li > label + * {
         flex: 1 200px;
-        margin-left: 10px
+        margin-left: 10px;
     }
     
    
@@ -236,4 +245,5 @@ label,
 .bottom-border {
     border: solid 1px #2d3945;
     margin-top: 3px;
+    margin-bottom: 15px;
 }

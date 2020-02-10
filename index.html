@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,23 +18,20 @@
 
         <span class="top-border"></span>
         <span class="bottom-border"></span>
-
         <fieldset>
+            <legend>Contact Information</legend>
             <ul class="contact-info">
-                <legend>
-                    <h3>Contact Information</h3>
-                </legend>
                 <li>
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user_name" placeholder="Required">
+                    <input type="text" id="name" name="user_name" placeholder="Required" required>
                 </li>
                 <li>
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="user_email" placeholder="Required">
+                    <input type="email" id="email" name="user_email" placeholder="Required" required>
                 </li>
                 <li>
                     <label for="number">Phone Number</label>
-                    <input type="text" id="number" name="user_number" placeholder="555-555-5555">
+                    <input type="tel" id="number" name="user_number" placeholder="555-555-5555">
                 </li>
                 <li>
                     <label for="address">Street Address</label>
@@ -113,9 +110,7 @@
         <span class="middle-border"></span>
 
         <fieldset id="newsletter">
-            <legend>
-                <h3>Newsletter</h3>
-            </legend>
+            <legend>Newsletter</legend>
             <span id="receive">Select the newsletters you would like to recieve</span>
 
             <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html" class="label"> HTML News</label><br>
@@ -123,8 +118,8 @@
             <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript" class="label"> Javascript News</label>
 
             <span id="news-format">Newsletter format</span>
-            <input type="radio" id="html_format" value="html-format" name="user_format"><label class="label" for="html_format"> HTML</label><br>
-            <input type="radio" id="plaintext" value="plain-text" name="user_format"><label for="plaintext" class="label"> Plain text</label>
+            <input type="radio" id="html_format" value="html_format" name="user_format"><label class="label" for="html_format"> HTML</label><br>
+            <input type="radio" id="plaintext" value="plain_text" name="user_format"><label for="plaintext" class="label"> Plain text</label>
 
             <label for="topic" id="topics">Other topics you'd like to hear about</label>
             <textarea id="topic" name="user_topic" cols="7"></textarea>
@@ -135,5 +130,5 @@
 
 
     </form>
-</body>
+    </body>
 </html>
