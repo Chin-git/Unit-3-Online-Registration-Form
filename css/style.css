@@ -169,11 +169,13 @@ label,
     border: none;
     font-size: 1.25em;
     transition: 0.1s;
+    outline: none;
 }
 
 #btn:active {
     background: tomato;
     transform: scale(0.99);
+    outline: none;
 }
 
 #zipcode {
