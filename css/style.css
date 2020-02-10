@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    padding: inherit;
+}
+
 body {
     margin: 0 auto;
     background: #fff;
@@ -14,8 +18,12 @@ body {
     max-width: 1200px;
 }
 
+li {
+    list-style-type: none;
+}
+
 form {
-    margin: 40px 40px;
+    margin: 40px 40px 0 40px;
 }
 
 fieldset {
@@ -170,6 +178,27 @@ label,
                         */
 
 @media (min-width: 768px) {
+    #contact-info li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    form {
+        margin: 40px 25%;
+    }
+    
+    #contact-info > li > label {
+        flex: 1;
+    }
+    
+    #contact-info > li > label + * {
+        flex: 1 0 200px;
+    }
+    
+   #contact-info > li > label + #zipcode {
+       
+    }
     
 }
 
