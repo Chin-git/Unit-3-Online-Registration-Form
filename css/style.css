@@ -24,6 +24,7 @@ li {
 
 form {
     margin: 40px 40px 0 40px;
+    padding-top: 10px;
 }
 
 fieldset {
@@ -32,7 +33,7 @@ fieldset {
 }
 
 legend {
-    color: #2d3945;
+    color: #1F4373;
     font-weight: bold;
     margin: 15px 0;
     font-size: 1.1em;
@@ -40,7 +41,7 @@ legend {
 
 h2 {
     text-align: center;
-    color: #2d3945;
+    color: #1F4373;
 }
 
 span {
@@ -74,7 +75,7 @@ textarea {
     height: 150px;
     box-shadow: 1px 1px 0 rgba(0,0,0,0.3) inset,
                 -1px -1px 0 rgba(0,0,0,0.3) inset;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s;
 }
 
 input[type="text"]:focus,
@@ -82,13 +83,18 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border: 2px solid #839bb1;
+    border: 2px solid #193773;
     outline: none;
     background: #fff;
 }
 
 ::placeholder {
-    color: #c8cbce;
+    color: #BFADA8;
+    font-size: 0.9em;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 input::placeholder {
@@ -97,7 +103,12 @@ input::placeholder {
 }
 
 select:required:invalid {
-    color: #c8cbce;
+    color: #BFADA8;
+    font-size: 0.9em;
+}
+
+select:required:invalid:focus {
+    color: transparent;
 }
 
 option:not(:first-of-type) {
@@ -184,14 +195,12 @@ label,
 
 #main-header {
     width: 100%;
-    color: white;
-    background: #2D3945;
+    color: #fff;
+    background: #193773;
     margin: 0;
     padding: 30px;
     text-align: center;
 }
-
-
 
 /* =====================
        Media Query
@@ -204,6 +213,7 @@ label,
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
     
     fieldset {
@@ -217,15 +227,12 @@ label,
     }
     
     .contact-info > li > label {
-        flex: 1;
+        flex: 0.5 75px;
     }
     
     .contact-info > li > label + * {
         flex: 1 200px;
-        margin-left: 10px;
     }
-    
-   
 }
 /* ============
        Misc
@@ -240,21 +247,21 @@ label,
 
 .align {
     text-align: center;
-    color: #bfc3c6;
+    color: #BFADA8;
 }
 
 .top-border {
     margin-top: 40px;
-    border: solid 2px #2d3945;
+    border: solid 2px #73605C;
 }
 
 .middle-border {
-    border: solid 2px #2d3945;
+    border: solid 2px #73605C;
     margin: 20px 0;
 }
 
 .bottom-border {
-    border: solid 1px #2d3945;
+    border: solid 1px #73605C;
     margin-top: 3px;
     margin-bottom: 15px;
 }
