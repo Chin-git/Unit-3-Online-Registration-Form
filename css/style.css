@@ -186,7 +186,7 @@ label,
 #btn:active {
     background: tomato;
     transform: scale(0.99);
-/*    outline: none;*/
+    outline: none;
 }
 
 #zipcode {
