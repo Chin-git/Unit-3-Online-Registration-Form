@@ -25,6 +25,9 @@ li {
 form {
     margin: 40px 40px 0 40px;
     padding-top: 10px;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 fieldset {
@@ -59,8 +62,8 @@ select {
     margin: 15px 0;
     border: none;
     height: 50px;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0.3) inset,
-                -1px -1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3) inset,
+        -1px -1px 0 rgba(0, 0, 0, 0.3) inset;
     transition: 0.4s;
 
 }
@@ -73,8 +76,8 @@ textarea {
     margin: 15px 0;
     border: none;
     height: 150px;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0.3) inset,
-                -1px -1px 0 rgba(0,0,0,0.3) inset;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3) inset,
+        -1px -1px 0 rgba(0, 0, 0, 0.3) inset;
     transition: 0.4s;
 }
 
@@ -202,47 +205,21 @@ label,
     text-align: center;
 }
 
-/* =====================
-       Media Query
-   =====================
-                        */
-
-@media (min-width: 768px) {
-    
-    .contact-info li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    fieldset {
-        min-width: 0;
-        min-height: 0;
-        overflow: hidden;
-    }
-    
-    form {
-        margin: 40px 25%;
-    }
-    
-    .contact-info > li > label {
-        flex: 0.5 75px;
-    }
-    
-    .contact-info > li > label + * {
-        flex: 1 200px;
-    }
-}
 /* ============
        Misc
    ============
                 */
 
+.news-text {
+    text-align: center;
+    padding: 10px 0;
+}
+
 #copyright {
     font-style: italic;
     font-weight: bold;
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .align {
@@ -264,4 +241,37 @@ label,
     border: solid 1px #73605C;
     margin-top: 3px;
     margin-bottom: 15px;
+}
+
+/* =====================
+       Media Query
+   =====================
+                        */
+
+@media (min-width: 768px) {
+
+    .contact-info li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    fieldset {
+        min-width: 0;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    form {
+        margin: 40px 25%;
+    }
+
+    .contact-info > li > label {
+        flex: 0.5 75px;
+    }
+
+    .contact-info > li > label + * {
+        flex: 1 200px;
+    }
 }
